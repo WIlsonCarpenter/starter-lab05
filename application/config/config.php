@@ -87,7 +87,8 @@ $config['language'] = 'english';
   | Default Character Set
   |--------------------------------------------------------------------------
   |
-  | This determines which character set is used by default in various methods
+  | This determines which character set is used by default in
+  | various methods
   | that require a character set to be provided.
   |
  */
@@ -102,7 +103,7 @@ $config['charset'] = 'UTF-8';
   | setting this variable to TRUE (boolean).  See the user guide for details.
   |
  */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 
 /*

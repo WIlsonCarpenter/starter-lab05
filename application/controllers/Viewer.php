@@ -20,17 +20,19 @@ class Viewer extends Application {
 
     function index()
     {
-	$this->data['pagebody'] = 'homepage';    // this is the view we want shown
-	$this->data['authors'] = $this->quotes->all();
-	$this->render();
+    	$this->data['pagebody'] = 'homepage';    // this is the view we want shown
+    	$this->data['authors'] = $this->quotes->all();
+    	$this->render();
     }
 
     // method to display just a single quote
     function quote($id)
     {
-	$this->data['pagebody'] = 'justone';    // this is the view we want shown
-	$this->data = array_merge($this->data, (array) $this->quotes->get($id));
-	$this->render();
+        // this is the view we want shown
+    	$this->data['pagebody'] = 'justone';    
+    	$this->data = array_merge($this->data, (array) 
+            $this->quotes->get($id));
+    	$this->render();
     }
 
 }
